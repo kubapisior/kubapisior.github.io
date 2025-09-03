@@ -1,21 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>👋</title>
+  <meta charset="UTF-8">
+  <title>Moja stronka</title>
   <style>
-    html,body{height:100%;margin:0}
-    body{
-      display:flex;align-items:center;justify-content:center;
-      background:#111;color:#b30000;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
-      text-align:center;
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: white;
+      font-family: Arial, sans-serif;
+      animation: bg 10s infinite linear;
+      background-size: 400% 400%;
     }
-    h1{font-size: clamp(32px, 8vw, 80px);line-height:1.2;margin:0 20px;}
+
+    @keyframes bg {
+      0% { background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet); background-size: 1400% 1400%; }
+      50% { background: linear-gradient(270deg, violet, indigo, blue, green, yellow, orange, red); background-size: 1400% 1400%; }
+      100% { background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet); background-size: 1400% 1400%; }
+    }
   </style>
 </head>
 <body>
-  <h1>chuj ci w dupę</h1>
+  Chuj ci w dupę
 </body>
 </html>
